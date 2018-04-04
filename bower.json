@@ -1,8 +1,8 @@
 {
-  "name": "original-mission-tile-customizer",
-  "description": "Tile customizer",
+  "name": "kairos",
+  "description": "Kairos",
   "version": "0.0.1",
-  "homepage": "https://github.com/lacoderia/rowlf.git",
+  "homepage": "https://github.com/lacoderia/kairos-front.git",
   "license": "MIT",
   "private": true,
   "dependencies": {
