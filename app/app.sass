@@ -1,0 +1,43 @@
+// Vendor styles
+@import "/bower_components/html5-boilerplate/dist/css/normalize.css"
+@import "/bower_components/html5-boilerplate/dist/css/main.css"
+@import "/bower_components/angular-material/angular-material.min.css"
+@import "https://fonts.googleapis.com/icon?family=Material+Icons"
+
+// App styles
+@import "assets/styles/base/_mixins"
+@import "assets/styles/base/_typography"
+@import "assets/styles/base/_variables"
+
+// Component Styles
+@import "components/intro/intro"
+@import "components/login/login"
+@import "components/navigation/navigation"
+@import "components/home/home"
+
+// Common styles
+
+html
+  background-color: white
+
+body
+  background-color: white
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+#main
+  flex: 1
+
+footer
+  background-color: $color-pink
+  color: white
+  font-size: 0.9rem
+  padding: 1.5rem
+  text-align: center
+
+h2
+  margin: 0
+
+md-input-container:not(.md-input-invalid) .md-input-message-animation
+  visibility: hidden

@@ -1,0 +1,98 @@
+// App styles
+@import "../../assets/styles/base/_mixins"
+@import "../../assets/styles/base/_typography"
+@import "../../assets/styles/base/_variables"
+
+.login-component
+  overflow: hidden
+  overflow-y: auto
+
+  .form
+    background: white
+    margin: 4.5rem 0
+    padding: 2rem 15%
+
+    h1
+      font-weight: 500
+      text-align: center
+      text-transform: uppercase
+
+    .form-separator
+      background-color: $color-pink
+      border: 0
+      height: 1px
+      margin: 0 auto
+      margin-bottom: 50px
+      width: 35%
+
+    .md-button.md-primary.md-raised
+      color: white
+      padding-left: 12px
+      padding-right: 12px
+
+    a
+      color: black
+      font-weight: 500
+      margin-top: 8px
+      text-decoration: none
+
+      &:hover
+        color: $color-green
+        text-decoration: underline
+
+    button.green-button
+      background-color: $color-green
+      border: none
+      border-radius: 0
+      color: white
+      font-size: 16px
+      font-weight: 500
+      padding: 15px
+      text-transform: uppercase
+      width: 100%
+      -webkit-transition-duration: 0.5s
+      transition-duration: 0.5s
+      -webkit-transition-timing-function: cubic-bezier(.35,0,.25,1)
+      transition-timing-function: cubic-bezier(.35,0,.25,1)
+      -webkit-transition-property: background-color,fill,color
+      transition-property: background-color,fill,color
+
+      &:hover
+        background-color: #75AD1F
+
+    .button-container
+      margin-bottom: 30px
+
+  md-input-container:not(.md-input-invalid) .md-input-message-animation
+    visibility: hidden
+
+  .group-title
+    font-size: 18px
+
+  .tutorial-link
+    font-size: 12px
+    padding-top: 10px
+
+  .hint
+    /* Position the hint */
+    position: absolute
+    left: 2px
+    right: auto
+    bottom: 7px
+    /* Copy styles from ng-messages */
+    font-size: 12px
+    line-height: 14px
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2)
+    /* Set our own color */
+    color: grey
+
+  .inputdemoErrorsAdvanced .hint.ng-hide,
+  .inputdemoErrorsAdvanced .hint.ng-enter,
+  .inputdemoErrorsAdvanced .hint.ng-leave.ng-leave-active
+    bottom: 26px
+    opacity: 0
+
+  .inputdemoErrorsAdvanced .hint.ng-leave,
+  .inputdemoErrorsAdvanced .hint.ng-enter.ng-enter-active
+    bottom: 7px
+    opacity: 1
