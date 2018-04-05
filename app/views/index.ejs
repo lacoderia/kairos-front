@@ -30,9 +30,7 @@
         </div>
     </footer>
 
-    <script>
-        var date = new Date();
-    </script>
+    <% var date = Date.now(); %>
 
     <!-- Angular libs -->
     <script src="bower_components/angular/angular.js"></script>
@@ -47,45 +45,45 @@
     <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
 
     <!-- Application scripts -->
-    <script src="app.module.js"></script>
-    <script src="app.config.js"></script>
+    <script src="app.module.js?t=<%= date %>"></script>
+    <script src="app.config.js?t=<%= date %>"></script>
 
     <!-- Application services -->
-    <script src="shared/services/utils.service.js"></script>
-    <script src="shared/services/store.service.js"></script>
-    <script src="shared/services/session.service.js"></script>
-    <script src="shared/services/routing.service.js"></script>
+    <script src="shared/services/utils.service.js?t=<%= date %>"></script>
+    <script src="shared/services/store.service.js?t=<%= date %>"></script>
+    <script src="shared/services/session.service.js?t=<%= date %>"></script>
+    <script src="shared/services/routing.service.js?t=<%= date %>"></script>
 
     <!-- Application directives -->
-    <script src="shared/directives/password-check.directive.js"></script>
+    <script src="shared/directives/password-check.directive.js?t=<%= date %>"></script>
 
     <!-- Common Classes -->
-    <script src="shared/classes/User.js"></script>
+    <script src="shared/classes/User.js?t=<%= date %>"></script>
 
     <!-- Components -->
 
     <!-- Intro Component -->
-    <script src="components/intro/intro.module.js"></script>
-    <script src="components/intro/intro.component.js"></script>
+    <script src="components/intro/intro.module.js?t=<%= date %>"></script>
+    <script src="components/intro/intro.component.js?t=<%= date %>"></script>
 
     <!-- Login Component -->
-    <script src="components/login/login.module.js"></script>
-    <script src="components/login/login.component.js"></script>
-    <script src="components/login/login.service.js"></script>
+    <script src="components/login/login.module.js?t=<%= date %>"></script>
+    <script src="components/login/login.component.js?t=<%= date %>"></script>
+    <script src="components/login/login.service.js?t=<%= date %>"></script>
 
     <!-- Navigation Component -->
-    <script src="components/navigation/navigation.module.js"></script>
-    <script src="components/navigation/navigation.component.js"></script>
-    <script src="components/navigation/navigation.service.js"></script>
+    <script src="components/navigation/navigation.module.js?t=<%= date %>"></script>
+    <script src="components/navigation/navigation.component.js?t=<%= date %>"></script>
+    <script src="components/navigation/navigation.service.js?t=<%= date %>"></script>
 
     <!-- Home Component -->
-    <script src="components/home/home.module.js"></script>
-    <script src="components/home/home.component.js"></script>
-    <script src="components/home/home.service.js"></script>
+    <script src="components/home/home.module.js?t=<%= date %>"></script>
+    <script src="components/home/home.component.js?t=<%= date %>"></script>
+    <script src="components/home/home.service.js?t=<%= date %>"></script>
 
     <!-- Soon Component -->
-    <script src="components/soon/soon.module.js"></script>
-    <script src="components/soon/soon.component.js"></script>
-    <script src="components/soon/soon.service.js"></script>
+    <script src="components/soon/soon.module.js?t=<%= date %>"></script>
+    <script src="components/soon/soon.component.js?t=<%= date %>"></script>
+    <script src="components/soon/soon.service.js?t=<%= date %>"></script>
 </body>
 </html>
