@@ -125,8 +125,12 @@
                     </md-input-container>
                     <div layout="column" layout-align="center center">
                         <div class="button-container" layout="row" layout-fill>
-                            <button type="submit" class="green-button">Continuar</button>
-                            <md-progress-circular md-mode="indeterminate" md-diameter="25" ng-if="$ctrl.loading"></md-progress-circular>
+                            <button type="submit" class="green-button">
+                                Continuar
+                                <div class="loader-container">
+                                    <md-progress-circular md-mode="indeterminate" md-diameter="25" ng-if="$ctrl.loading"></md-progress-circular>
+                                </div>
+                            </button>
                         </div>
                         <a href="" ng-click="$ctrl.changeView($ctrl.VIEWS.LOGIN)">¿Ya tienes una cuenta registrada?</a>
                         <a href="mailto:info@prana.mx">¿Tienes algún problema?</a>
